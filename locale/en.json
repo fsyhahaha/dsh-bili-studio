@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Bilibili Studio",
+    "description": "Script, dub with TTS, assemble a video with ffmpeg, comment on Bilibili, and publish one-click with user confirmation."
+  }
+}

@@ -1,0 +1,12 @@
+# Node / build
+node_modules/
+dist/
+*.log
+
+# 运行数据不在本目录（各用户机器上由 $DSH_HOME/bili-studio 动态生成），但万一误放进来也别提交
+cookie.txt
+state.json
+out/
+
+# OS
+.DS_Store

@@ -1,0 +1,46 @@
+{
+  "name": "dsh-bili-studio",
+  "version": "1.0.0",
+  "description": "DSH 插件：B站工作室——自动写口播脚本 / edge-tts 配音 / ffmpeg 合成视频 / 评论互动 / 一键发布。",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsyhahaha/dsh-bili-studio.git"
+  },
+  "homepage": "https://github.com/fsyhahaha/dsh-bili-studio#readme",
+  "keywords": [
+    "dsh",
+    "plugin",
+    "bilibili",
+    "b站",
+    "tts",
+    "ffmpeg",
+    "video",
+    "comment"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib-bridge.mjs",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "lib/*.mjs"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}
